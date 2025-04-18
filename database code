@@ -1,0 +1,65 @@
+CREATE TABLE ‘Admin’
+(‘Admin_ID’ int (50) NOT NULL,
+‘Name’ varchar (50) NOT NULL,
+‘Email’ varchar (20) NOT NULL,
+‘Password’ varchar (20) NOT NULL,
+‘Image’ varchar (20) NOT NULL,
+PRIMARY KEY(‘Admin_ID’));
+3.5.2 Database Queries for Staff
+CREATE TABLE ‘Staff’
+(‘Staff_ID’ int (50) NOT NULL,
+‘Name’ varchar (50) NOT NULL,
+‘Email’ varchar (20) NOT NULL,
+‘Password’ varchar (20) NOT NULL,
+‘Image’ varchar (20) NOT NULL,
+PRIMARY KEY(‘Staff_ID’));
+3.5.3 Database Queries for Drug
+CREATE TABLE ‘Drug’
+( ‘Drug_ID’ int (50) NOT NULL,
+‘Category’ varchar (50) NOT NULL,
+‘Drug_Name’ varchar (50) NOT NULL,
+‘Size’ int (50) NOT NULL,
+‘Price’ int (50) NOT NULL,
+‘Quantity’ int (50) NOT NULL,
+‘Location’ Varchar (50) NOT NULL,
+‘Manufacturer’ Varchar (50) NOT NULL,
+‘Production_Date’ int (50) NOT NULL,
+‘Expiry_Date’ int (50) NOT NULL,
+21PRIMARY KEY(‘Drug_ID’));
+3.5.4 Database Queries for Sales
+CREATE TABLE ‘Sales’
+(‘Sales_ID’ int (50) NOT NULL,
+‘Category’ Varchar (50) NOT NULL,
+‘Name’ varchar (50) NOT NULL,
+‘Price’ int (50) NOT NULL,
+‘Quantity’ int (50) NOT NULL,
+‘Total_Price’ int (50) NOT NULL,
+‘Discount’ int (50) NOT NULL,
+‘Sale_Price’ int (50) NOT NULL,
+‘Manufacturer’ varchar (50) NOT NULL,
+‘Production_Date’ int (50) NOT NULL,
+‘Expiry_Date’ int (50) NOT NULL,
+‘Sales_Date’ int (50) NOT NULL,
+PRIMARY KEY (‘Sales_ID’));
+3.5.5 Database Queries for Seller
+CREATE TABLE ‘Seller’
+(‘Seller_ID’ int (50) NOT NULL,
+‘Image’ varchar (50) NOT NULL,
+‘Name’ varchar (50) NOT NULL,
+‘Email’ varchar (50) NOT NULL,
+‘Mobile_Number’ int (20) NOT NULL,
+‘Address’ varchar (20) NOT NULL,
+PRIMARY KEY (‘Seller_ID’));
+223.5.6 Database Queries for Inventory
+CREATE TABLE ‘Inventory’
+( ‘ID_No.’ int (50) NOT NULL,
+‘Category’ Varchar (50) NOT NULL,
+‘Name’ varchar (50) NOT NULL,
+‘Size’ int (50) NOT NULL,
+‘Price’ int (20) NOT NULL,
+‘Quantity’ int (20) NOT NULL,
+‘Location’ varchar (50) NOT NULL,
+‘Manufacturer’ varchar (50) NOT NULL,
+‘Production_Date’ int (50) NOT NULL,
+‘Expiry_Date’ int (50) NOT NULL,
+PRIMARY KEY (‘Serial_No.’));
